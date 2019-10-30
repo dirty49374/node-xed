@@ -18,7 +18,12 @@
             }],
             ["OS in \"win\"", {
                 "libraries": [
-                    "../cpp/lib/windows/xed.lib"
+                    "../cpp/lib/win/xed.lib"
+                ],
+            }],
+            ["OS in \"mac\"", {
+                "libraries": [
+                    "../cpp/lib/mac/libxed.a"
                 ],
             }]
         ],
