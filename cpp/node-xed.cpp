@@ -57,7 +57,7 @@ namespace node_xed {
           buffer[0] = '\0';
           for (xed_uint_t i=0; i<xdi_len; ++i) {
             char tmp[100];
-            sprintf(tmp, "%02Xh ", assemblies[addr+i]);
+            sprintf(tmp, "%02Xh ", assemblies[offset+i]);
           }
           insn.Set("asm", buffer);
         }
@@ -65,7 +65,7 @@ namespace node_xed {
       else
       {
         xdi_len = 1;
-        sprintf(buffer, "%02Xh", assemblies[addr]);
+        sprintf(buffer, "%02Xh", assemblies[offset]);
         insn.Set("asm", buffer);
       }
 
