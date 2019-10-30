@@ -1,8 +1,9 @@
 {
   "name": "node-xed",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "gypfile": true,
   "scripts": {
     "build": "node-gyp rebuild",
