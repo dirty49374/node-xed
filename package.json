@@ -1,6 +1,6 @@
 {
   "name": "node-xed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "gypfile": true,
@@ -12,7 +12,7 @@
   "author": "dirty49374",
   "license": "Apache-2.0",
   "devDependencies": {
-    "node-gyp": "^3.7.0",
+    "node-gyp": "^3.8.0",
     "nodemon": "^1.19.4"
   },
   "dependencies": {

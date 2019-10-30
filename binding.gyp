@@ -10,9 +10,20 @@
             "<!@(node -p \"require('node-addon-api').include\")",
             "cpp/include"
         ],
-        "libraries": [
-            "../cpp/lib/linux/libxed.a"
+        "conditions": [
+            ["OS in \"linux\"", {
+                "libraries": [
+                    "../cpp/lib/linux/libxed.a"
+                ],
+            }],
+            ["OS in \"win\"", {
+                "libraries": [
+                    "../cpp/lib/windows/xed.lib"
+                ],
+            }]
         ],
+
+
         'dependencies': [
             "<!(node -p \"require('node-addon-api').gyp\")"
         ],
