@@ -110,7 +110,7 @@ namespace node_xed {
       int addrlen = (int) info[2].As<Napi::Number>();
       sprintf(addrFormat, "0x%%0%dllx", addrlen > 16 ? 16 : addrlen);
     } else {
-      strcpy(addrFormat, "0x%%llx");
+      strcpy(addrFormat, "0x%llx");
     }
 
     return disassemble(env, assemblies, addr, addrFormat);
